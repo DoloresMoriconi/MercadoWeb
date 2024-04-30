@@ -1,0 +1,14 @@
+<div class="container text-center">
+   {{> saludo}}
+
+   <div class="row">
+      {{#each productosMarket}}
+         <div class="col-md-4 mb-4">
+            {{> productos
+               nombre=this
+            }}
+         </div>
+      {{/each}}
+   </div>
+</div>
+

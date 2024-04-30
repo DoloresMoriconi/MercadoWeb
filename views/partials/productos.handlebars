@@ -1,0 +1,10 @@
+<div class="card" style="width: 18rem;">
+   <img src="/assets/img/{{nombre}}.png" class="card-img-top" alt="foto de {{nombre}}">
+   <div class="card-body">
+      <h5 class="card-title">{{nombre}}</h5>
+      <form action="/agregar-producto" method="post">
+         <input type="hidden" name="producto" value="{{nombre}}">
+         <button type="submit" class="btn btn-success btn-lg btn-block" style="width: 90%;">Agregar</button>
+      </form>
+   </div>
+</div>
